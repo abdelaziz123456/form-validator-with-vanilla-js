@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Form Validator</title>
+        <link rel="stylesheet" href="main.css">
+        
+
+    </head>
+
+
+    <body>
+        <div class="container">
+             <!-- we will use id in js and class in css -->
+            <form  id="form" class="form">
+                <h2>Register With Us</h2>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input id='username' placeholder="Enter username" type="text">
+                    <small class='username-err hidden'>error message</small>
+                </div>
+
+                <!-- ممكن اخلى النوع ايميل بس هيعمل تحقيق تلقائي انا اللى عاوز اعمله بفسه لذلك هسيها نص -->
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input id='email' placeholder="Enter email" type="text">
+                    <small class='email-err hidden'>error message</small>
+                </div>
+                <div class="form-control ">
+                    <label for="password">Password</label>
+                    <input id='password' placeholder="Enter password" type="password">
+                    <small class='password-err hidden'>error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input id='password2' placeholder="Enter password again" type="password">
+                    <small class='password2-err hidden'>error message</small>
+                </div>
+                <button>Submit</button>
+
+
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

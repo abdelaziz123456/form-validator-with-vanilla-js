@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    box-sizing:border-box
+}
+
+/* حطيت الحاجات فى النص عن طريق انى خليته فليكس وظبطت مكان العناصر اللى جواه بالخاصيتين اللى وراه ولازم اخلى الارتفاع 100 فيو هايت عشان ياخد طول الصفحة اللى المستخدم فاتحها كلها ويوسط العنصر بالظبط */
+body{
+    background-color: #F9FAFB;
+    font-family:'Open Sans',sans-serif;
+
+    /* الجزء ده هتستخدمه كتير لما تيجى توسطن العناصر */
+    display:flex;
+    align-items: center;
+     justify-content: center; 
+    min-height: 100vh;
+    margin:0;
+   
+}
+
+.container{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+    width:400px;
+}
+
+h2{
+    text-align:center;
+    margin:0 0 20px
+}
+
+.form{
+    padding:30px 40px
+}
+
+.form-control{
+    margin-bottom:10px;
+    padding-bottom: 20px;
+    position:relative;
+
+}
+
+.form-control label{
+    color:#777;
+    display:block
+}
+input{
+    height: 40px;
+    width:100%;
+    border: solid 2px #F0F0F0;
+    border-radius: 4px;
+    display: block;
+    padding:10px;
+    font:14 px 'Open Sans',
+    sans-serif;
+    
+}
+
+
+
+/* دى اهم حته فى المشروع بقوله دور على الفورم كنترول اللى واخده الكلاس نجاح لو لاقيتها خش فى الانتبوت بتاعها غيره لو واخده كلاس تانى اعمل التغير التانى وهغير الكلاس بالجافا سكريبت بسهوله */
+.success {
+    border-color:#2ecc71
+}
+
+.error  {
+    border-color: #e74c3c
+}
+
+.errtext{
+    color:#e74c3c
+}
+.succtext{
+    color:#2ecc71
+}
+
+.form-control small{
+display: block;
+position:absolute;
+bottom:0;
+left:0;
+
+/* وخلى باللك عملتها هيدين مش نان  */
+
+
+}
+
+
+.hidden{
+    visibility: hidden;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #3498db;
+    border:solid 2px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    margin-top:20px;
+    width:100%
+    ;
+}
